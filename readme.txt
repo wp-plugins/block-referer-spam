@@ -26,9 +26,16 @@ Some of the sites blocked are:
 * ilovevitaly
 * ... any many more!
 
-== Support ==
-
 If you think you found a bug in Referer Spam Blocker, please contact me and I should be able to fix it within 48 hours. Further, if you want to contribute, feel free!
+
+Moreover, if you have issues with this plugin, please contact me over my website or the support forum here.
+
+---
+Best Regards,
+codestic.com
+
+== Screenshots ==
+1. Admin Interface, simple and efficient.
 
 == Installation ==
 
