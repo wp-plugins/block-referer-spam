@@ -1,5 +1,5 @@
 <div class="wrap">
-    <h2><?php _e('Referer Spam Blocker', 'ref-spam-blocker'); ?></h2>
+    <h2><?php _e('Block Referer Spam', 'ref-spam-blocker'); ?></h2>
 
     <?php if (isset($_GET['settings-updated'])) : ?>
         <div id="message" class="updated">
@@ -144,13 +144,13 @@
                         <h3><?php esc_attr_e('About the Plugin', 'ref-spam-blocker'); ?></h3>
 
                         <div class="inside">
-                            <p><?php _e('<b>Referer Spam Blocker</b> aims at blocking all (or most) websites that use <a href="https://en.wikipedia.org/wiki/Referer_spam" target="_blank">Referer Spam</a> to promote their – often more than dodgy – website content.', 'ref-spam-blocker'); ?></p>
+                            <p><?php _e('<b>Block Referer Spam</b> aims at blocking all (or most) websites that use <a href="https://en.wikipedia.org/wiki/Referer_spam" target="_blank">Referer Spam</a> to promote their – often more than dodgy – website content.', 'ref-spam-blocker'); ?></p>
 
                             <p><?php _e('This is accomplished by bots that very successfully simulate human behavior. They do this so well, that they even show up in <b>Google Analytics.</b>', 'ref-spam-blocker'); ?></p>
 
                             <p><?php _e('This plugin does not need any further configuration. Once active and auto-update is enabled, you will barely see any of those nasty spammers any more.', 'ref-spam-blocker'); ?></p>
 
-                            <p><?php _e('If you think you found a bug in <b>Referer Spam Blocker</b>, please contact me and I should be able to fix it within 48 hours.', 'ref-spam-blocker'); ?></p>
+                            <p><?php _e('If you think you found a bug in <b>Block Referer Spam</b>, please contact me and I should be able to fix it within 48 hours.', 'ref-spam-blocker'); ?></p>
                         </div>
                     </div>
 
