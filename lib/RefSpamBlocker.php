@@ -7,6 +7,9 @@
 class RefSpamBlocker {
 
     public function __construct($pluginFile) {
+        // load text domain
+        load_textdomain('ref-spam-blocker', REFSPAMBLOCKER_PATH . 'lang/ref-spam-blocker-' . get_locale() . '.mo');
+
         register_activation_hook($pluginFile, [&$this, 'activate']);
 
         add_action('init', [&$this, 'init']);

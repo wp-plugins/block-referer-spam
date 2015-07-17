@@ -160,7 +160,7 @@
                         <div class="inside">
                             <p><?php _e('My name is Robin and I am a <b>Web Developer</b>, <b>UI/UX Designer</b> and <b>IT Consultant.</b>', 'ref-spam-blocker'); ?></p>
 
-                            <p><?php _e('I am regularly available for interesting freelance projects. If you ever need my help, do not hesitat to get in touch.', 'ref-spam-blocker'); ?></p>
+                            <p><?php _e('I am regularly available for interesting freelance projects. If you ever need my help, do not hesitate to get in touch.', 'ref-spam-blocker'); ?></p>
 
                             <p><?php _e('<b>Email:</b> <a href="mailto:hello@codestic.com">hello@codestic.com</a><br><b>Website:</b> <a href="http://codestic.com" target="_blank">codestic.com</a>', 'ref-spam-blocker'); ?></p>
 
