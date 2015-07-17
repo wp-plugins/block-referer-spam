@@ -42,7 +42,7 @@ __Examples Blocked__
 * floating-share-buttons
 * 4webmaster
 * ilovevitaly
-* ... any many more!
+* ... and many more!
 
 If you think you found a bug in Referer Spam Blocker, please contact me and I should be able to fix it within 48 hours. Further, if you want to contribute, feel free!
 
