@@ -88,7 +88,6 @@ This can basically have three reasons.
 
 This is my first openly available WordPress Plugin. While I wrote many for clients of mine, none ever had the exposure of this one. If you find a bug, please report it either here or directly [on my website / email](http://codestic.com). I will always aim to fix the issue within 48 hours.
 
-
 == Changelog ==
 
 = 1.0.2 =
