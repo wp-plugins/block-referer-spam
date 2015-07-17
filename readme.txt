@@ -54,6 +54,7 @@ Rob / codestic.com
 
 
 == Screenshots ==
+
 1. Admin Interface
 
 == Installation ==
@@ -93,15 +94,18 @@ This is my first openly available WordPress Plugin. While I wrote many for clien
 == Changelog ==
 
 = 1.0.2 =
+
 * Improved FAQs
 * Added writable check for .htaccess
 * Added WP-CLI installation instructions
 * Added part of Wikipedia about referer spam
 
 = 1.0.1 =
+
 * Added German localization
 * Updated screenshot and fixed typos
 * Added frequently asked questions
 
 = 1.0 =
+
 * Initial version
