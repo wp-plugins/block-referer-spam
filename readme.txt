@@ -1,6 +1,6 @@
 === Block Referer Spam ===
 Contributors: codestic
-Tags: spam, referer, referrer, blocker, semalt, buttons-for-website, floating-share-buttons, 4webmaster, ilovevitaly, referal, referral, analytics, analytics spam, referer spam, referrer spam, referal spam, referral spam
+Tags: spam, referer, referrer, blocker, semalt, buttons-for-website, floating-share-buttons, 4webmaster, ilovevitaly, referal, referral, analytics, analytics spam, referer spam, referrer spam, referal spam, referral spam, blacklist, block, blocker, protector, protect, domain, anti referer, anti referrer, anti referral, block analytics, anti-spam, antispam, spambot, spam-bot, spam bot, bot block, googlespam, google spam, seo spam, seo, block spam, apache, spammers, referer attack, referrer attach, referral attack, referer blockieren, referrer blockieren, spam blockieren, domain blockieren, bot, nospam, spam security, wp-spamfree, domain direct, bot redirect, spam redirect, spam filter, bot filter, spam attack
 Requires at least: 3.0.1
 Tested up to: 4.2.2
 Stable tag: 1.0.2
@@ -30,11 +30,13 @@ the spammer site's search engine ranking owing
 to link-counting algorithms that search engines use.`
 
 __Features__
+
 * Automatic or manual updates of referer spam list
 * Option of adding custom referer spam hosts
 * Two methods of blocking: mod_rewrite or WordPress based
 
 __Examples Blocked__
+
 * semalt
 * buttons-for-website
 * floating-share-buttons
@@ -46,12 +48,13 @@ If you think you found a bug in Referer Spam Blocker, please contact me and I sh
 
 Moreover, if you have issues with this plugin, please contact me over my website or the support forum here.
 
----
-Best Regards,
+Anything else, please get in touch!
 
-codestic.com
+Rob / codestic.com
+
 
 == Screenshots ==
+
 1. Admin Interface
 
 == Installation ==
@@ -91,15 +94,18 @@ This is my first openly available WordPress Plugin. While I wrote many for clien
 == Changelog ==
 
 = 1.0.2 =
+
 * Improved FAQs
 * Added writable check for .htaccess
 * Added WP-CLI installation instructions
 * Added part of Wikipedia about referer spam
 
 = 1.0.1 =
+
 * Added German localization
 * Updated screenshot and fixed typos
 * Added frequently asked questions
 
 = 1.0 =
+
 * Initial version
