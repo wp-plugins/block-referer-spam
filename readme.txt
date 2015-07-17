@@ -3,7 +3,7 @@ Contributors: codestic
 Tags: spam, referer, referrer, blocker, semalt, buttons-for-website, floating-share-buttons, 4webmaster, ilovevitaly, referal, referral, analytics, analytics spam, referer spam, referrer spam, referal spam, referral spam
 Requires at least: 3.0.1
 Tested up to: 4.2.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,12 +13,28 @@ Blocks referer spam from accessing your site and cleans up your Google Analytics
 
 __Block Referer Spam__ aims at blocking all (or most) websites that use Referer Spam to promote their – often more than dodgy – website content. This is accomplished by bots that very successfully simulate human behavior. They do this so well, that they even show up in __Google Analytics__. This plugin does not need any further configuration. Once active and auto-update is enabled, you will barely see any of those nasty spammers any more.
 
+From [Wikipedia](https://en.wikipedia.org/wiki/Referer_spam):
+
+`Referrer spam (also known as log spam or referrer
+bombing) is a kind of spamdexing (spamming aimed
+at search engines). The technique involves making
+repeated web site requests using a fake referer URL
+to the site the spammer wishes to advertise. Sites that
+publish their access logs, including referer statistics,
+will then inadvertently link back to the spammer's site.
+These links will be indexed by search engines
+as they crawl the access logs.
+
+This benefits the spammer because the free link improves
+the spammer site's search engine ranking owing
+to link-counting algorithms that search engines use.`
+
+__Features__
 * Automatic or manual updates of referer spam list
 * Option of adding custom referer spam hosts
 * Two methods of blocking: mod_rewrite or WordPress based
 
-Some of the sites blocked are:
-
+__Examples Blocked__
 * semalt
 * buttons-for-website
 * floating-share-buttons
@@ -40,9 +56,21 @@ codestic.com
 
 == Installation ==
 
-Either download directly from the WordPress Plugin Repository or manually from GitHub and copy to your plugin directory.
+To install Block Referer Spam and start cleaning up your Google Analytics:
+
+1. Install Block Referer Spam automatically or by uploading the ZIP file.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
+3. Block Referer Spam is now activated. Go to the "Referer Spam" menu and start review your options.
+3. You are not protected!
+
+__Using WP-CLI__
+`wp plugin install block-referer-spam --activate`
 
 == Frequently Asked Questions ==
+
+= What sites are blocked? =
+
+To give you the least of an headache, this plugin is not using one, but indeed several sources of referer spam lists. Our severs merge multiple lists every couple hours to provide you with the best possible protection.
 
 = I still see those websites in my statistics! =
 
@@ -62,6 +90,12 @@ This is my first openly available WordPress Plugin. While I wrote many for clien
 
 
 == Changelog ==
+
+= 1.0.2 =
+* Improved FAQs
+* Added writable check for .htaccess
+* Added WP-CLI installation instructions
+* Added part of Wikipedia about referer spam
 
 = 1.0.1 =
 * Added German localization

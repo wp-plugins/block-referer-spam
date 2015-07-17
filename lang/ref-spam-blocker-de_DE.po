@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Block Referer Spam\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Fri Jul 17 2015 09:51:48 GMT+0200 (CEST)\n"
-"PO-Revision-Date: Fri Jul 17 2015 10:19:03 GMT+0200 (CEST)\n"
+"PO-Revision-Date: Fri Jul 17 2015 14:39:16 GMT+0200 (CEST)\n"
 "Last-Translator: codestic <hello@codestic.com>\n"
 "Language-Team: \n"
 "Language: German\n"
@@ -22,47 +22,55 @@ msgstr ""
 "X-Loco-Target-Locale: de_DE\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: admin/dashboard.php:2
+#: ../admin/dashboard.php:2 ../lib/RefSpamBlocker.php:54
 msgid "Block Referer Spam"
 msgstr "Referrer Spam Blockieren"
 
-#: admin/dashboard.php:6
+#: ../admin/dashboard.php:6
 msgid "Settings saved."
 msgstr "Einstellungen gespeichert."
 
-#: admin/dashboard.php:12
+#: ../admin/dashboard.php:12
 msgid "List updated."
 msgstr "Liste aktualisiert."
 
-#: admin/dashboard.php:17
+#: ../admin/dashboard.php:17
 msgid "List failed to update."
 msgstr "Aktualisierung der Liste fehlgeschlagen."
 
-#: admin/dashboard.php:40
+#: ../admin/dashboard.php:24
+msgid ""
+"Your .htaccess is not writable. The \"Rewrite Block\" option will most likely "
+"not work!"
+msgstr ""
+"Ihre .htaccess-Datei ist nicht beschreibbar. Die \"Rewrite Blockierung\" wird "
+"höchstwahrscheinlich nicht funktionieren!"
+
+#: ../admin/dashboard.php:46
 msgid "Auto Update"
 msgstr "Automatische Aktualisierung"
 
-#: admin/dashboard.php:47
+#: ../admin/dashboard.php:53
 msgid "Yes, once daily"
 msgstr "Ja, einmal täglich"
 
-#: admin/dashboard.php:55
+#: ../admin/dashboard.php:61
 msgid "No, only manual"
 msgstr "Nein, nur manuell"
 
-#: admin/dashboard.php:63
+#: ../admin/dashboard.php:69
 msgid "Block Mode"
 msgstr "Blocki-Modus"
 
-#: admin/dashboard.php:70
+#: ../admin/dashboard.php:76
 msgid "Rewrite Block"
 msgstr "Rewrite Blockierung"
 
-#: admin/dashboard.php:78
+#: ../admin/dashboard.php:84
 msgid "WordPress Block"
 msgstr "WordPress Blockierung"
 
-#: admin/dashboard.php:83
+#: ../admin/dashboard.php:89
 msgid ""
 "Rewrite Block is faster and occurs on the web-server level. If you run into "
 "problems (e.g. you cannot write your .htaccess file), use the WordPress "
@@ -72,33 +80,33 @@ msgstr ""
 "Server Ebene. Sollten Sie jedoch Probleme haben (bspw. mit dem Schreiben der "
 ".htaccess-Datei), dann nutzen Sie bitte die WordPress Blockierung."
 
-#: admin/dashboard.php:89
+#: ../admin/dashboard.php:95
 msgid "Manual Update"
 msgstr "Manuelle Aktualisierung"
 
-#: admin/dashboard.php:92
+#: ../admin/dashboard.php:98
 msgid "Download Updates"
 msgstr "Updates Herunterladen"
 
-#: admin/dashboard.php:95
+#: ../admin/dashboard.php:101
 msgid "Clicking this button will force an update of the referer spam list."
 msgstr ""
 "Das betätigen dieser Schaltfläche löst eine Aktualisierung der Spam Liste "
 "aus."
 
-#: admin/dashboard.php:101
+#: ../admin/dashboard.php:107
 msgid "Last Update"
 msgstr "Letzte Aktualisierung"
 
-#: admin/dashboard.php:107
+#: ../admin/dashboard.php:113
 msgid "Never"
 msgstr "Niemals"
 
-#: admin/dashboard.php:117
+#: ../admin/dashboard.php:123
 msgid "Custom Blocks"
 msgstr "Eigene Blockierungen"
 
-#: admin/dashboard.php:124
+#: ../admin/dashboard.php:130
 msgid ""
 "If you find that the spammer list does not catch all sites you want to block,"
 " feel free to add more. Custom blocks may be reported back anonymously to "
@@ -108,11 +116,11 @@ msgstr ""
 "hier eigene Einträge hinzufügen. Einträge können unter Umständen anonym mit "
 "unseren Servern geteilt werden, um die Liste für alle Nutzer zu verbessern."
 
-#: admin/dashboard.php:144
+#: ../admin/dashboard.php:150
 msgid "About the Plugin"
 msgstr "Über dieses Plugin"
 
-#: admin/dashboard.php:147
+#: ../admin/dashboard.php:153
 msgid ""
 "<b>Block Referer Spam</b> aims at blocking all (or most) websites that use "
 "<a href=\"https://en.wikipedia.org/wiki/Referer_spam\" target=\"_blank\">Referer "
@@ -123,7 +131,7 @@ msgstr ""
 "org/wiki/Referrer-Spam\" target=\"_blank\">Referrer Spam</a> gebrauch machen, "
 "zu blockieren."
 
-#: admin/dashboard.php:149
+#: ../admin/dashboard.php:155
 msgid ""
 "This is accomplished by bots that very successfully simulate human behavior. "
 "They do this so well, that they even show up in <b>Google Analytics.</b>"
@@ -132,7 +140,7 @@ msgstr ""
 "surfen und dabei fragwürdige Seiten bewerben - in Ihrem <b>Google "
 "Analytics</b>."
 
-#: admin/dashboard.php:151
+#: ../admin/dashboard.php:157
 msgid ""
 "This plugin does not need any further configuration. Once active and auto-"
 "update is enabled, you will barely see any of those nasty spammers any more."
@@ -141,7 +149,7 @@ msgstr ""
 "automatischer Aktualisierung aktiviert wurde, verschwinden die Einträge "
 "automatisch über Zeit."
 
-#: admin/dashboard.php:153
+#: ../admin/dashboard.php:159
 msgid ""
 "If you think you found a bug in <b>Block Referer Spam</b>, please contact me "
 "and I should be able to fix it within 48 hours."
@@ -150,11 +158,11 @@ msgstr ""
 "kontaktieren Sie mich bitte und ich versuche den Fehler innerhalb von 48 "
 "Stunden zu beheben."
 
-#: admin/dashboard.php:158
+#: ../admin/dashboard.php:164
 msgid "About the Author"
 msgstr "Über den Autor"
 
-#: admin/dashboard.php:161
+#: ../admin/dashboard.php:167
 msgid ""
 "My name is Robin and I am a <b>Web Developer</b>, <b>UI/UX Designer</b> and "
 "<b>IT Consultant.</b>"
@@ -162,7 +170,7 @@ msgstr ""
 "Mein Name ist Robin und ich bin ein <b><nobr>Web Entwickler</nobr></b>, "
 "<b>UI/UX Designer</b> und <b><nobr>IT Berater</nobr></b>."
 
-#: admin/dashboard.php:163
+#: ../admin/dashboard.php:169
 msgid ""
 "I am regularly available for interesting freelance projects. If you ever "
 "need my help, do not hesitate to get in touch."
@@ -170,7 +178,7 @@ msgstr ""
 "Ich bin regelmäßig für interessante Projekte als Freiberufler verfügbar. "
 "Sollten Sie meine professionelle Hilfe benötigen, kontaktieren Sie mich!"
 
-#: admin/dashboard.php:165
+#: ../admin/dashboard.php:171
 msgid ""
 "<b>Email:</b> <a href=\"mailto:hello@codestic.com\">hello@codestic."
 "com</a><br><b>Website:</b> <a href=\"http://codestic.com\" "
@@ -179,3 +187,7 @@ msgstr ""
 "<b>E-Mail:</b> <a href=\"mailto:hello@codestic.com\">hello@codestic."
 "com</a><br><b>Webseite:</b> <a href=\"http://codestic.com\" "
 "target=\"_blank\">codestic.com</a>"
+
+#: ../lib/RefSpamBlocker.php:55
+msgid "Referer Spam"
+msgstr "Referrer Spam"

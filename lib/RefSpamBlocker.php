@@ -2,6 +2,8 @@
 
 /**
  * RefSpamBlocker
+ *
+ * @author codestic <hello@codestic.com>
  */
 
 class RefSpamBlocker {
@@ -10,8 +12,10 @@ class RefSpamBlocker {
         // load text domain
         load_textdomain('ref-spam-blocker', REFSPAMBLOCKER_PATH . 'lang/ref-spam-blocker-' . get_locale() . '.mo');
 
+        // register activation
         register_activation_hook($pluginFile, [&$this, 'activate']);
 
+        // add actions
         add_action('init', [&$this, 'init']);
         add_action('admin_init', [$this, 'registerSettings']);
         add_action('dailyCronjob', [$this, 'dailyCronjob']);
@@ -47,8 +51,8 @@ class RefSpamBlocker {
      */
     public function createMenu() {
         $hook = add_menu_page(
-            'Referer Spam Block',
-            'Referer Spam',
+            __('Block Referer Spam'),
+            __('Referer Spam'),
             'manage_options',
             'ref-spam-block/',
             [&$this, 'adminDashboard'],

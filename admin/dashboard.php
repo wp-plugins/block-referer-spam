@@ -9,14 +9,20 @@
     <?php elseif (isset($_SESSION['ref-spam-block-flash'])) : ?>
         <?php if ($_SESSION['ref-spam-block-flash'] == 'list-updated') : ?>
             <div id="message" class="updated">
-                <p><strong><?php _e('List updated.') ?></strong></p>
+                <p><strong><?php _e('List updated.', 'ref-spam-blocker') ?></strong></p>
             </div>
 
         <?php elseif ($_SESSION['ref-spam-block-flash'] == 'list-not-updated') : ?>
             <div id="message" class="error">
-                <p><strong><?php _e('List failed to update.') ?></strong></p>
+                <p><strong><?php _e('List failed to update.', 'ref-spam-blocker') ?></strong></p>
             </div>
         <?php endif; ?>
+    <?php endif; ?>
+
+    <?php if (get_option('ref-spam-block-mode', 'rewrite') == 'rewrite' && (!is_writable(get_home_path() . '.htaccess'))) : ?>
+        <div id="message" class="error">
+            <p><strong><?php _e('Your .htaccess is not writable. The "Rewrite Block" option will most likely not work!', 'ref-spam-blocker') ?></strong></p>
+        </div>
     <?php endif; ?>
 
     <div id="poststuff">
