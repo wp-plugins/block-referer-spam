@@ -121,8 +121,9 @@ class RefSpamBlocker {
         // load list into array
         $list = $this->getList();
 
-        foreach ($list as $host) {
-            $lines[] = '  RewriteCond %{HTTP_REFERER} ' . str_replace('.', '\.', $host);
+        foreach ($list as $index => $host) {
+            $lines[] = "RewriteCond %{HTTP_REFERER} {$host} [NC" . (($index == count($list)-1) ? "" : ",OR") . "]";
+            //$lines[] = '  RewriteCond %{HTTP_REFERER} ' . str_replace('.', '\.', $host) . ' [NC,OR]';
         }
 
         $lines[] = '  RewriteRule .* - [F]';
