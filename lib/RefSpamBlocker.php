@@ -5,7 +5,6 @@
  *
  * @author codestic <hello@codestic.com>
  */
-
 class RefSpamBlocker {
 
     public function __construct($pluginFile) {
@@ -13,16 +12,16 @@ class RefSpamBlocker {
         load_textdomain('ref-spam-blocker', REFSPAMBLOCKER_PATH . 'lang/ref-spam-blocker-' . get_locale() . '.mo');
 
         // register activation
-        register_activation_hook($pluginFile, [&$this, 'activate']);
+        register_activation_hook($pluginFile, array(&$this, 'activate'));
 
         // add actions
-        add_action('init', [&$this, 'init']);
-        add_action('admin_init', [$this, 'registerSettings']);
-        add_action('dailyCronjob', [$this, 'dailyCronjob']);
-        add_action('wp', [&$this, 'pageLoad']);
+        add_action('init', array(&$this, 'init'));
+        add_action('admin_init', array($this, 'registerSettings'));
+        add_action('dailyCronjob', array($this, 'dailyCronjob'));
+        add_action('wp', array(&$this, 'pageLoad'));
 
-        add_action('wp_logout', [$this, 'logout']);
-        add_action('wp_login', [$this, 'logout']);
+        add_action('wp_logout', array($this, 'logout'));
+        add_action('wp_login', array($this, 'logout'));
     }
 
     /**
@@ -38,7 +37,7 @@ class RefSpamBlocker {
      */
     public function init() {
         // init
-        add_action('admin_menu', [&$this, 'createMenu']);
+        add_action('admin_menu', array(&$this, 'createMenu'));
 
         if (!session_id()) {
             session_start();
@@ -55,11 +54,11 @@ class RefSpamBlocker {
             __('Referer Spam'),
             'manage_options',
             'ref-spam-block/',
-            [&$this, 'adminDashboard'],
+            array(&$this, 'adminDashboard'),
             'dashicons-shield-alt'
         );
 
-        add_action("load-{$hook}", [&$this, 'updateSettings']);
+        add_action("load-{$hook}", array(&$this, 'updateSettings'));
     }
 
     /**
@@ -114,7 +113,7 @@ class RefSpamBlocker {
         $htaccess = get_home_path() . '.htaccess';
 
         // build lines
-        $lines = [];
+        $lines = array();
         $lines[] = '<IfModule mod_rewrite.c>';
         $lines[] = '  RewriteEngine on';
 
@@ -122,7 +121,7 @@ class RefSpamBlocker {
         $list = $this->getList();
 
         foreach ($list as $index => $host) {
-            $lines[] = "RewriteCond %{HTTP_REFERER} {$host} [NC" . (($index == count($list)-1) ? "" : ",OR") . "]";
+            $lines[] = "RewriteCond %{HTTP_REFERER} {$host} [NC" . (($index == count($list) - 1) ? "" : ",OR") . "]";
             //$lines[] = '  RewriteCond %{HTTP_REFERER} ' . str_replace('.', '\.', $host) . ' [NC,OR]';
         }
 
